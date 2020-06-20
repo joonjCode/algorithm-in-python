@@ -19,8 +19,14 @@ def addTwoNumbers(l1, l2):
         if l2:
             carry+= l2.val
             l2 = l2.next
-        curr.next = ListNode(carry%10)
-        curr = curr.next
-        carry = carry // 10
-    return head.next
+        curr.val = carry % 10
+        print(f'curr:{curr}')
+        carry = carry// 10
+        print(f'carry: {carry}')
+            
+        if l1 or l2 or carry:
+            curr.next = ListNode(0)
+            curr = curr.next
+                
+    return head
 
