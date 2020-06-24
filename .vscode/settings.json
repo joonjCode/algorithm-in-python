@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "/opt/miniconda3/envs/py37/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
+}
